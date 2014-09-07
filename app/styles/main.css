@@ -1,0 +1,196 @@
+*::selection{
+    color: white;
+    background-color: #123456;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+html{
+    height: 100%;
+}
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    height: 100%;
+    overflow-y: scroll;
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    font-family: "Sanchez", serif;
+    font-size: 50px;
+}
+
+p{
+    font-family: Arial, sans-serif;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+    border-bottom: 1px solid #e5e5e5;
+    height: 60px;
+    box-shadow: 0 0 2px black;
+}
+
+.nav a{
+    height: 80px;
+    padding-top: 30px !important;
+    width: 150px;
+    border-radius: 0 !important;
+    margin: 0 20px;
+    text-align: center;
+    background-color: rgb(242,242,242);
+    box-shadow: 0 0 2px #888;
+    font-family: Arial;
+    text-transform: uppercase;
+
+}
+
+
+
+li.active > a{
+    background-color: white !important;
+    color: black !important;
+
+}
+
+.logo{
+    float: right;
+    height: 80%;
+}
+
+a.logo{
+    height: 100%;
+}
+img.logo{
+    margin: 10%;
+}
+
+.line{
+    display: block;
+
+    width: 150px;
+    position: absolute;
+    background-color: #66CC33;
+    height: 10px;
+    bottom: 10px;
+    left: 0;
+    transition: bottom 0.1s linear;
+}
+
+.nav a:hover > .line{
+    bottom: 0;
+}
+
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+    margin-top: 7px;
+    margin-bottom: 0;
+    margin-right: 20px;
+    line-height: 40px;
+    padding-bottom: 19px;
+    float: right;
+    font-family: "Sanchez", serif;
+}
+
+.container{
+    width: 100%;
+    padding: 0;
+    min-height: 100%;
+    height: 10%;
+}
+/* Custom page footer */
+.footer {
+
+    color: #777;
+    height: 100px;
+    background-color: green;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+    margin: 40px 0;
+}
+
+.marketing p + h4 {
+    margin-top: 28px;
+}
+
+article, .image-section{
+    display: inline-block;
+    max-width: 50%;
+
+    min-height: 100%;
+}
+
+.image-section{
+    position: fixed;
+    width: 100%; 
+    z-index: -1;
+    max-width: 100%;
+}
+
+.image-section img{
+    width: 100%;
+}
+
+article{
+    background-color: rgba(240, 240, 240, 0.8);
+    padding: 2%;
+    margin-left: 40%;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    article {
+        max-width: 730px;
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
